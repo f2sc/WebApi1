@@ -18,9 +18,9 @@ namespace WebApi1.Service
             return context.Categorias;
         }
 
-        public async Task Save(Categoria Categoria)
+        public async Task Save(Categoria categoria)
         {
-            context.Categorias.Add(Categoria);
+            context.Categorias.Add(categoria);
             await context.SaveChangesAsync();
         }
 
@@ -56,7 +56,7 @@ namespace WebApi1.Service
     {
         IEnumerable<Categoria> Get();
 
-        Task Save(Categoria Categoria);
+        Task Save(Categoria categoria);
 
         Task Update(Guid id, [FromBody] Categoria categoria);
 
