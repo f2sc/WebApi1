@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using projectEF;
 using projectEF.Models;
-
+ 
 namespace WebApi1.Service
 {
     public class CategoriaService : ICategoriaService
